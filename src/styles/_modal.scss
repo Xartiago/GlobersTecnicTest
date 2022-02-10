@@ -1,0 +1,27 @@
+.modal{
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin: auto auto;
+  text-align: center;
+  background-color: white;
+  border: 1px solid black;
+  width: 93%;
+  padding: 20px;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: 500;
+}
+@media(min-width: 920px){
+  .modal{
+    width: 50%;
+  }
+}
+@media(min-width: 1440px){
+  .modal{
+    width: 28%;
+  }
+}

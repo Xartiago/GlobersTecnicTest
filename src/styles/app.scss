@@ -1,0 +1,42 @@
+@use 'navbars';
+@use 'form';
+@use 'modal';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* Reset Styles */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+li {
+  list-style: none;
+}
+/* Podria ser un Mixin */
+.pointer{
+  cursor: pointer;
+}
+/* Color modo Nocturno */
+.noct{
+  background: #4b6cb7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+    color: white;
+}
+/* Aplicar blur */
+.blur{
+  filter: blur(2px);
+}
+/* modo nocturno desactivado */
+.normal{
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+.appCont{
+  display: flex;
+  flex-direction: row;
+}
+@media(min-width: 920px){
+  .appCont{
+    flex-direction: column;
+  }
+}
